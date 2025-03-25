@@ -1,0 +1,19 @@
+<html>
+  <body>
+ 
+    <p>Please enter something...</p>
+    <input type="text" id = "mytextbox" onchange="myfunc()">
+ 
+    <script>
+       var mybox = document.getElementById("mytextbox");
+       function myfunc() {
+          console.log("Hello world!");
+       }
+       mybox.addEventListener("change",myfunc);
+    </script>
+ 
+  </body>
+</html>
+
+<!-- 複数の処理を登録しようとすると、以前に登録した処理が最新のものに上書きされてしまう
+ とは、「Hello world」が複数console上で並ばないということ。 -->

@@ -4,7 +4,7 @@
  
     <p>Please enter something...</p>
     <input type="text" id = "mytextbox" onchange="myfunc()"> 
-     <!-- 変化があった瞬間に、myfuncが発動する -->
+    <!-- inputboxの内容に変化があった瞬間に、myfuncが発動する -->
 
     <script>
        var mybox = document.getElementById("mytextbox");
@@ -12,8 +12,9 @@
           console.log("Hello world!");
        }
        mybox.onchange = myfunc();
-       
-    </script>
+      //  myfunc() をすぐ実行して、その戻り値（undefined）を onchange に代入してる
+      //  ChatGPTの「7.docx」参照
+</script>
  
   </body>
 </html>
